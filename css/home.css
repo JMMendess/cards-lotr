@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    
+}
+.container {
+    background:rgba(0, 0, 0, 0.5) url(../persons-img/map.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-blend-mode: darken;
+    
+    
+}
+.header{
+    width: 100%;
+    height: 60px;
+    background: rgb(0,0,0, 1);
+    color: white;
+}
+
+.gridContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    
+    padding: 20px;
+    flex: 1 0 auto;
+}
+.mainContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.persons {
+    width: 280px;
+    height: 380px;
+    border: 2px solid transparent;
+    box-shadow: inset 0 0 1em #E04D01;
+    animation: forwards 5s;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: #2A2550;
+    padding: 5px;
+} 
+.mainCardImg {
+    width: 100%;
+    height: 180px;
+    padding: 5px;
+    border-radius: 10px;
+    
+}
+.mainPersonsCardTitle {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 900;
+    color: #FF7700;
+        
+}
+.mainPersonsCardDescription {
+    text-align: center;
+    overflow-y: scroll;
+    height: 150px;
+    width:100%;
+    color: #E04D01;
+    padding: 5px;
+    font-weight: 350;
+    border-radius: 10px;
+}
+::-webkit-scrollbar{
+   display: none;
+}
+
+
