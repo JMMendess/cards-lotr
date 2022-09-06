@@ -2,8 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 20px;
-    
+        
+}
+:root{
+    --color:#2A2550;
+    --color1:#FF7700;
+    --color2:#E04D01;
 }
 .container {
     background:rgba(0, 0, 0, 0.5) url(../persons-img/map.jpg);
@@ -11,14 +15,18 @@
     background-attachment: fixed;
     background-size: 100%;
     background-blend-mode: darken;
-    
-    
 }
 .header{
     width: 100%;
     height: 60px;
-    background: rgb(0,0,0, 1);
-    color: white;
+    background: rgb(0,0,0, 0.1);
+    
+}
+h1 {
+    text-align: center;
+    font-size: 3em;
+    color: var(--color2);
+
 }
 
 .gridContainer{
@@ -38,13 +46,12 @@
     width: 280px;
     height: 380px;
     border: 2px solid transparent;
-    box-shadow: inset 0 0 1em #E04D01;
-    animation: forwards 5s;
+    box-shadow: inset 0 0 1em var(--color2);
     border-radius: 10px;
-    transition: 0.5s;
     cursor: pointer;
-    background-color: #2A2550;
+    background-color: var(--color);
     padding: 5px;
+    
 } 
 .mainCardImg {
     width: 100%;
@@ -57,7 +64,7 @@
     text-align: center;
     font-size: 26px;
     font-weight: 900;
-    color: #FF7700;
+    color: var(--color2);
         
 }
 .mainPersonsCardDescription {
@@ -65,13 +72,18 @@
     overflow-y: scroll;
     height: 150px;
     width:100%;
-    color: #E04D01;
+    color:var(--color1);
     padding: 5px;
+    font-size: 20px;
     font-weight: 350;
     border-radius: 10px;
 }
 ::-webkit-scrollbar{
    display: none;
 }
-
-
+.footer {
+    width: 100%;
+    height: 60px;
+    background: rgb(0,0,0, 0.1);
+    
+}
