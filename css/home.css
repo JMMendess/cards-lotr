@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-        
+    scroll-behavior: smooth;
 }
 :root{
     --color:#2A2550;
@@ -10,16 +10,18 @@
     --color2:#E04D01;
 }
 .container {
-    background:rgba(0, 0, 0, 0.5) url(../persons-img/map.jpg);
+    background-image: url(../persons-img/map.jpg);
+    background-color: rgba(0, 0, 0, 0.5);
     background-position: center;
     background-attachment: fixed;
-    background-size: 100%;
+    background-size: cover;
     background-blend-mode: darken;
+    
 }
 .header{
     width: 100%;
     height: 60px;
-    background: rgb(0,0,0, 0.1);
+    background: rgb(0, 0, 0, 0.1);
     
 }
 h1 {
@@ -81,9 +83,19 @@ h1 {
 ::-webkit-scrollbar{
    display: none;
 }
-.footer {
-    width: 100%;
-    height: 60px;
-    background: rgb(0,0,0, 0.1);
-    
+.btn-top {
+   height: 50px; 
+
+}
+
+#back-to-top {
+    color: var(--color1);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    width: 130px;
+    border: 2px solid transparent;
+    box-shadow: inset 0 0 1em var(--color2);
+    background: var(--color);
 }
